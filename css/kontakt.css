@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    background-color: #131313;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    font-size: 50px;
+    color: #D81E7E;
+    margin-left: 4px;
+}
+
+.location {
+    font-size: 50px;
+    font-weight: 800;
+    color: #D81E7E;
+}
+
+.line {
+    padding: 5px;
+    background-color: #15AED0;
+    border-color: #15AED0;
+    border-radius: 100%;
+    margin: 5px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
