@@ -47,3 +47,7 @@ h1 a {
     animation: 1s grow ease forwards;
     text-align: center;
 }
+
+.nav_list {
+    list-style-type: none;
+}
