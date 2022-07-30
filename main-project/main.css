@@ -4,7 +4,7 @@
 }
 
 .container {
-    min-width: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,6 +43,7 @@ h1 a {
     position: relative;
     width: 0;
     height: 0;
+    color: #fff;
     background-color: #181818;
     animation: 1s grow ease forwards;
     text-align: center;
@@ -50,4 +51,84 @@ h1 a {
 
 .nav_list {
     list-style-type: none;
+}
+
+.nav_list a {
+    text-decoration: none;
+    font-size: 50px;
+    color: #15aed0;
+}
+
+.nav_list_item {
+    height: 100%;
+    overflow: hidden;
+}
+
+.nav_list li {
+    padding: 15px 0;
+    text-transform: uppercase; /* sprawdzic czy bedzie estetycznie */
+    transform: translateY(200px);
+    opacity: 0;
+    animation: 2s slideUp ease forwards .5s;
+    position: relative;
+}
+
+.nav_list li::before {
+    content: ""; /*sprawdzic czy zwykly cudzyslow w html bedzie problemem */
+    position: absolute;
+    height: 2px;
+    width: 0px;
+    left: 0;
+    bottom: 10px;
+    background: #D81E7E;
+    transition: all .5s ease;
+}
+
+.nav_list li:hover:before {
+    width: 100%;
+}
+
+.popover p {
+    padding: 50px;
+    opacity: 0;
+    animation: 1s fadeIn ease forwards 1s;
+}
+
+.popover .close::after {
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: #D81E7E;
+    color: #fff;
+    content: "x";
+    cursor: pointer;
+    opacity: 0;
+    animation: 1s fadeIn ease forwards .5s;
+}
+
+@keyframes grow {
+    100% {
+        height: 90%;
+        width: 90%;
+    }
+}
+
+@keyframes fadeIn {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
