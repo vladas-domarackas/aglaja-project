@@ -194,7 +194,7 @@ h2 a {
 
 .link-list .links {
     padding: 0px;
-    transform: translate(-180px, 0);
+    transform: translate(-270px, 0);
 }
 
 .link-list .links .contact_items {
@@ -209,7 +209,7 @@ h2 a {
 }
 
 .link-list .links .contact_items:hover {
-    transform: translate(110px, 0);
+    transform: translate(210px, 0);
     background: rgba(255, 255, 255, 0.4);
 }
 
