@@ -22,7 +22,6 @@ h1 a {
 
 .popover {
     display: none;
-    box-shadow: 0 0 1em #66cbe2;
 }
 
 .popover:target {
@@ -32,8 +31,8 @@ h1 a {
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 .popover .content {
