@@ -37,8 +37,6 @@
     color: #15aed0;
 }
 
-/* wklejone z main.css */
-
 .menu-name {
     display: flex;
     flex-direction: row;
@@ -98,7 +96,7 @@ h2 a {
 
 .menu_item a {
     text-decoration: none;
-    font-size: 2em;
+    font-size: 50px;
     color: #15aed0;
 }
 
@@ -175,3 +173,66 @@ h2 a {
         opacity: 1;
     }
 }
+
+.map-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.below {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+.links {
+    position: fixed;
+}
+
+.link-list .links {
+    padding: 0px;
+    transform: translate(-270px, 0);
+}
+
+.link-list .links .contact_items {
+    display: block;
+    margin: 5px;
+    background: rgba(0, 0, 0, 0.36);
+    width: 300px;
+    text-align: right;
+    padding: 10px;
+    border-radius: 0 30px 30px 0;
+    transition: all 1s;
+}
+
+.link-list .links .contact_items:hover {
+    transform: translate(110px, 0);
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.link-list .links .contact_items:hover a {
+    color: #000;
+}
+.link-list .links .contact_items:hover i {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.36);
+    transform: rotate(360deg);
+    transition: all 1s;
+}
+
+.link-list .links .contact_items i {
+    margin-left: 10px;
+    color: #000;
+    background: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    background: #ffffff;
+    transform: rotate(0deg);
+}
+
