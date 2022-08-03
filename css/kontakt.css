@@ -22,15 +22,9 @@
     font-size: 50px;
     font-weight: 800;
     color: #D81E7E;
+    text-transform: uppercase;
+    padding-right: 10px;
 }
-
-/* .line {
-    padding: 5px;
-    background-color: #15AED0;
-    border-color: #15AED0;
-    border-radius: 100%;
-    margin: 5px;
-} */
 
 .contact_items a {
     text-decoration: none;
@@ -58,7 +52,7 @@ h2 a {
 
 .popover {
     display: none;
-    background-color: #181818;
+    background-color: #181818;  
 }
 
 .popover:target {
@@ -84,6 +78,9 @@ h2 a {
     background-color: #181818;
     animation: 1s grow ease forwards;
     text-align: center;
+    border: 4px solid #D81E7E;
+
+    z-index: 1;
 }
 
 .menu_list {
@@ -129,9 +126,9 @@ h2 a {
     width: 100%;
 }
 
+
 .popover p {
     padding: 50px;
-    opacity: 0;
     animation: 1s fadeIn ease forwards 1s;
 }
 
@@ -150,7 +147,6 @@ h2 a {
     color: #fff;
     content: "x";
     cursor: pointer;
-    opacity: 0;
     animation: 1s fadeIn ease forwards .5s;
 }
 
@@ -178,7 +174,10 @@ h2 a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    flex-shrink: 1;
 }
 
 .below {
@@ -197,7 +196,7 @@ h2 a {
     transform: translate(-270px, 0);
 }
 
-.link-list .links .contact_items {
+.link-list .links .contact_items, .contact_item {
     display: block;
     margin: 5px;
     background: rgba(0, 0, 0, 0.36);
@@ -209,13 +208,23 @@ h2 a {
 }
 
 .link-list .links .contact_items:hover {
-    transform: translate(210px, 0);
+    transform: translate(100px, 0);
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.link-list .links .contact_item:hover {
+    transform: translate(200px, 0);
     background: rgba(255, 255, 255, 0.4);
 }
 
 .link-list .links .contact_items:hover a {
     color: #000;
 }
+
+.link-list .links .contact_item:hover a {
+    color: #000;
+}
+
 .link-list .links .contact_items:hover i {
     color: #fff;
     background: rgba(0, 0, 0, 0.36);
@@ -236,3 +245,40 @@ h2 a {
     transform: rotate(0deg);
 }
 
+.link-list .links .contact_item:hover i {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.36);
+    transform: rotate(360deg);
+    transition: all 1s;
+}
+
+.link-list .links .contact_item i {
+    margin-left: 10px;
+    color: #000;
+    background: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    background: #ffffff;
+    transform: rotate(0deg);
+}
+
+.map {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    height: 400px;
+    width: 600px;
+    flex-shrink: 1;
+    padding: 10px;
+    border-style: solid;
+    border-color: #15aed0;
+    flex-shrink: 1;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+}
