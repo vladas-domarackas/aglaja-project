@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    background-color: #131313;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    font-size: 50px;
+    color: #D81E7E;
+    margin-left: 4px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.location {
+    font-size: 50px;
+    font-weight: 800;
+    color: #D81E7E;
+    text-transform: uppercase;
+    padding-right: 10px;
+}
+
+.contact_items a {
+    text-decoration: none;
+    color: #15aed0;
+}
+
+.menu-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #181818;
+    border-style: solid;
+    border-top-color: #15aed0;
+    border-bottom-style: none;
+    border-left-style: none;
+    border-right-style: none;
+}
+
+h2 a {
+    font-size: 40px;
+    color: #D81E7E;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.popover {
+    display: none;
+    background-color: #181818;  
+}
+
+.popover:target {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.popover .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 0;
+    height: 0;
+    color: #fff;
+    background-color: #181818;
+    animation: 1s grow ease forwards;
+    text-align: center;
+    border: 4px solid #D81E7E;
+    z-index: 1;
+}
+
+.menu_list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu_item a {
+    text-decoration: none;
+    font-size: 50px;
+    color: #15aed0;
+}
+
+.menu_item {
+    height: 20%;
+    overflow: visible;
+}
+
+.menu_list li {
+    padding: 15px 0;
+    text-transform: uppercase; /* sprawdzic czy bedzie estetycznie */
+    transform: translateY(200px);
+    opacity: 0;
+    animation: 2s slideUp ease forwards .5s;
+    position: relative;
+}
+
+.menu_list li::before {
+    content: ""; /*sprawdzic czy zwykly cudzyslow w html bedzie problemem */
+    position: absolute;
+    height: 2px;
+    width: 0px;
+    left: 0;
+    bottom: 10px;
+    background: #D81E7E;
+    transition: all .5s ease;
+}
+
+.menu_list li:hover:before {
+    width: 100%;
+}
+
+
+.popover p {
+    padding: 50px;
+    animation: 1s fadeIn ease forwards 1s;
+}
+
+.popover .close::after {
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: #D81E7E;
+    color: #fff;
+    content: "x";
+    cursor: pointer;
+    animation: 1s fadeIn ease forwards .5s;
+}
+
+@keyframes grow {
+    100% {
+        height: 90%;
+        width: 90%;
+    }
+}
+
+@keyframes fadeIn {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.map-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    flex-shrink: 1;
+}
+
+.below {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+.links {
+    position: fixed;
+}
+
+.link-list .links {
+    padding: 0px;
+    transform: translate(-270px, 0);
+}
+
+.link-list .links .contact_items, .contact_item {
+    display: block;
+    margin: 5px;
+    background: rgba(0, 0, 0, 0.36);
+    width: 300px;
+    text-align: right;
+    padding: 10px;
+    border-radius: 0 30px 30px 0;
+    transition: all 1s;
+}
+
+.link-list .links .contact_items:hover {
+    transform: translate(100px, 0);
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.link-list .links .contact_item:hover {
+    transform: translate(200px, 0);
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.link-list .links .contact_items:hover a {
+    color: #000;
+}
+
+.link-list .links .contact_item:hover a {
+    color: #000;
+}
+
+.link-list .links .contact_items:hover i {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.36);
+    transform: rotate(360deg);
+    transition: all 1s;
+}
+
+.link-list .links .contact_items i {
+    margin-left: 10px;
+    color: #000;
+    background: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    background: #ffffff;
+    transform: rotate(0deg);
+}
+
+.link-list .links .contact_item:hover i {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.36);
+    transform: rotate(360deg);
+    transition: all 1s;
+}
+
+.link-list .links .contact_item i {
+    margin-left: 10px;
+    color: #000;
+    background: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    background: #ffffff;
+    transform: rotate(0deg);
+}
+
+.map {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    height: 400px;
+    width: 600px;
+    flex-shrink: 1;
+    padding: 10px;
+    border-style: solid;
+    border-color: #15aed0;
+    flex-shrink: 1;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+}

@@ -79,7 +79,6 @@ h2 a {
     animation: 1s grow ease forwards;
     text-align: center;
     border: 4px solid #D81E7E;
-
     z-index: 1;
 }
 
