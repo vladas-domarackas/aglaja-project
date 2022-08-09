@@ -217,4 +217,31 @@ li:before {
 .list-title {
   color: #15aed0;
   font-size: 20px;
+  font-weight: 600;
+}
+
+.text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+.problems {
+  padding-left: 5vh;
+  padding-right: 5vh;
+  padding-top: 2vh;
+  text-align: justify;
+  width: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.sidebartwo {
+  border-left: 20px;
+  border-left-style: dotted;
+  border-left-color: #D81E7E;
+  width: 300px;
+  padding: 10px;
+  flex-shrink: 1;
 }
