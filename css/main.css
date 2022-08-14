@@ -66,7 +66,7 @@ h1 a {
 
 .nav_list li {
     padding: 15px 0;
-    text-transform: uppercase; /* sprawdzic czy bedzie estetycznie */
+    text-transform: uppercase; 
     transform: translateY(200px);
     opacity: 0;
     animation: 2s slideUp ease forwards .5s;
@@ -74,7 +74,7 @@ h1 a {
 }
 
 .nav_list li::before {
-    content: ""; /*sprawdzic czy zwykly cudzyslow w html bedzie problemem */
+    content: ""; 
     position: absolute;
     height: 2px;
     width: 0px;
@@ -133,4 +133,31 @@ h1 a {
     }
 }
 
-/* slay */
+h1::before {
+    content: ""; 
+    position: absolute;
+    height: 2px;
+    width: 0px;
+    left: 0;
+    bottom: 0;
+    background: #15aed0;
+    transition: all .5s ease;
+    
+}
+
+h1:hover:before {
+    width: 100%;
+}
+
+.container h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 0;
+    height: 0;
+    color: #fff;
+    background-color: #131313;
+    animation: 1s grow ease forwards;
+    text-align: center;
+}

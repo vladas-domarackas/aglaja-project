@@ -132,3 +132,32 @@ h1 a {
         opacity: 1;
     }
 }
+
+h1::before {
+    content: ""; 
+    position: absolute;
+    height: 2px;
+    width: 0px;
+    left: 0;
+    bottom: 0;
+    background: #15aed0;
+    transition: all .5s ease;
+    
+}
+
+h1:hover:before {
+    width: 100%;
+}
+
+.container h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 0;
+    height: 0;
+    color: #fff;
+    background-color: #131313;
+    animation: 1s grow ease forwards;
+    text-align: center;
+}
