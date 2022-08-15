@@ -156,7 +156,6 @@ h1:hover:before {
     position: relative;
     width: 0;
     height: 0;
-    color: #fff;
     background-color: #131313;
     animation: 1s grow ease forwards;
     text-align: center;
