@@ -272,9 +272,7 @@ h2 a {
     position: relative;
     overflow: hidden;
     display: flex;
-    flex-shrink: 1;
     padding: 10px;
-    flex-shrink: 1;
     border: 0.5vw;
     border: #15aed0;
     border-style: solid;
@@ -283,6 +281,8 @@ h2 a {
 .map iframe {
     width: 20vw;
     height: 20vw;
+    min-width: 250px;
+    min-height: 250px;
 }
 
 img {
