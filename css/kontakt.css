@@ -5,6 +5,7 @@
 
 .container {
     min-height: 100vh;
+    overflow: hidden;
     scroll-behavior: smooth;
     background-color: #131313;
     font-family: Arial, Helvetica, sans-serif;
@@ -277,7 +278,7 @@ h2 a {
     padding: 10px;
     border-style: solid;
     border-color: #15aed0;
-    flex-shrink: 1;
+
 }
 
 .map iframe {
@@ -298,5 +299,4 @@ img {
     align-items: center;
     gap: 10px;
     text-align: center;
-    flex-shrink: 1;
 }
