@@ -19,11 +19,12 @@
 }
 
 .location-text {
-    font-size: 50px;
+    font-size: 3.5vw;
     font-weight: 800;
     color: #D81E7E;
     text-transform: uppercase;
-    padding-right: 10px;
+    display: flex;
+    flex-shrink: 1;
 }
 
 .contact_items a {
@@ -271,22 +272,21 @@ h2 a {
     position: relative;
     overflow: hidden;
     display: flex;
-    height: 400px;
-    width: 600px;
     flex-shrink: 1;
     padding: 10px;
-    border-style: solid;
-    border-color: #15aed0;
     flex-shrink: 1;
+    border: 0.5vw;
+    border: #15aed0;
+    border-style: solid;
 }
 
 .map iframe {
-    width: 100%;
-    height: 100%;
+    width: 20vw;
+    height: 20vw;
 }
 
 img {
-    border-radius: 40%;
+    border-radius: 35%;
     max-width: 28%;
     height: auto;
 }
@@ -298,5 +298,4 @@ img {
     align-items: center;
     gap: 10px;
     text-align: center;
-    flex-shrink: 1;
 }
