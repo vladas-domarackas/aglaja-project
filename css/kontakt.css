@@ -283,8 +283,8 @@ h2 a {
 .map iframe {
     width: 20vw;
     height: 20vw;
-    min-width: 100px;
-    min-height: 100px;
+    min-width: 200px;
+    min-height: 300px;
 }
 
 img {
