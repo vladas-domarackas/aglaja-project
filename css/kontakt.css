@@ -272,9 +272,9 @@ h2 a {
     position: relative;
     overflow: hidden;
     display: flex;
-    flex-shrink: 1;
+    
     padding: 10px;
-    flex-shrink: 1;
+    
     border: 0.5vw;
     border: #15aed0;
     border-style: solid;
