@@ -18,20 +18,6 @@
     text-transform: uppercase;
 }
 
-.location-text {
-    font-size: 3vw;
-    font-weight: 800;
-    color: #D81E7E;
-    text-transform: uppercase;
-    display: flex;
-    flex-shrink: 1;
-}
-
-.contact_items a {
-    text-decoration: none;
-    color: #15aed0;
-}
-
 .menu-name {
     display: flex;
     flex-direction: row;
@@ -173,14 +159,14 @@ h2 a {
 h3 {
     color: #15aed0;
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: 2.5vw;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .care-title {
     color: #15aed0;
-    font-size: 30px;
+    font-size: 3vw;
     text-transform: uppercase;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -231,7 +217,7 @@ ol {
 }
 
 li, .text-header {
-	font-size: 1.5em;
+	font-size: 2vw;
     color: #fff;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -247,7 +233,7 @@ li:before {
 li a {
     text-decoration: none;
     color: #15aed0;
-    font-size: 1em;
+    font-size: 1.5vw;
 }
 
 strong {
@@ -260,7 +246,7 @@ strong {
 
 h4, .ending {
     color: #D81E7E;
-    font-size: 20px;
+    font-size: 1.5vw;
     text-transform: uppercase;
 }
 
