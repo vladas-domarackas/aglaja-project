@@ -14,7 +14,7 @@
 }
 
 h1 a {
-    font-size: 80px;
+    font-size: 5vw;
     color: #D81E7E;
     text-decoration: none;
     text-transform: uppercase;
@@ -156,7 +156,6 @@ h1:hover:before {
     position: relative;
     width: 0;
     height: 0;
-    color: #fff;
     background-color: #131313;
     animation: 1s grow ease forwards;
     text-align: center;

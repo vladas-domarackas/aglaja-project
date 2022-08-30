@@ -3,30 +3,33 @@
   padding: 0;
 }
 
-body {
-  margin: 0;
-  min-height: 100vh;
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-}
-
 .container {
   min-height: 100vh;
   scroll-behavior: smooth;
   background-color: #131313;
   font-family: Arial, Helvetica, sans-serif;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
 }
 
 .header {
-  font-size: 50px;
-  color: #d81e7e;
+  font-size: 4vw;
+  color: #D81E7E;
   margin-left: 4px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.location-text {
+  font-size: 3vw;
+  font-weight: 800;
+  color: #D81E7E;
+  text-transform: uppercase;
+  display: flex;
+  flex-shrink: 1;
+}
+
+.contact_items a {
+  text-decoration: none;
+  color: #15aed0;
 }
 
 .menu-name {
@@ -42,15 +45,15 @@ body {
 }
 
 h2 a {
-  font-size: 40px;
-  color: #d81e7e;
+  font-size: 3.5vw;
+  color: #D81E7E;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 .popover {
   display: none;
-  background-color: #181818;
+  background-color: #181818;  
 }
 
 .popover:target {
@@ -76,7 +79,7 @@ h2 a {
   background-color: #181818;
   animation: 1s grow ease forwards;
   text-align: center;
-  border: 4px solid #d81e7e;
+  border: 4px solid #D81E7E;
   z-index: 1;
 }
 
@@ -101,27 +104,28 @@ h2 a {
 
 .menu_list li {
   padding: 15px 0;
-  text-transform: uppercase;
+  text-transform: uppercase; 
   transform: translateY(200px);
   opacity: 0;
-  animation: 2s slideUp ease forwards 0.5s;
+  animation: 2s slideUp ease forwards .5s;
   position: relative;
 }
 
 .menu_list li::before {
-  content: "";
+  content: ""; 
   position: absolute;
   height: 2px;
   width: 0px;
   left: 0;
   bottom: 10px;
-  background: #d81e7e;
-  transition: all 0.5s ease;
+  background: #D81E7E;
+  transition: all .5s ease;
 }
 
 .menu_list li:hover:before {
   width: 100%;
 }
+
 
 .popover p {
   padding: 50px;
@@ -136,33 +140,33 @@ h2 a {
   position: absolute;
   display: flex;
   z-index: 1;
-  font-size: 30px;
+  font-size: 2.5vw;
   align-items: center;
   justify-content: center;
-  background-color: #d81e7e;
+  background-color: #D81E7E;
   color: #fff;
   content: "x";
   cursor: pointer;
-  animation: 1s fadeIn ease forwards 0.5s;
+  animation: 1s fadeIn ease forwards .5s;
 }
 
 @keyframes grow {
   100% {
-    height: 90%;
-    width: 90%;
+      height: 90%;
+      width: 90%;
   }
 }
 
 @keyframes fadeIn {
   100% {
-    opacity: 1;
+      opacity: 1;
   }
 }
 
 @keyframes slideUp {
   100% {
-    transform: translateY(0);
-    opacity: 1;
+      transform: translateY(0);
+      opacity: 1;
   }
 }
 

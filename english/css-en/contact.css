@@ -11,7 +11,7 @@
 }
 
 .header {
-    font-size: 50px;
+    font-size: 4vw;
     color: #D81E7E;
     margin-left: 4px;
     text-align: center;
@@ -19,8 +19,7 @@
 }
 
 .location-text {
-    font-size: 3.5vw;
-    
+    font-size: 3vw;
     font-weight: 800;
     color: #D81E7E;
     text-transform: uppercase;
@@ -46,7 +45,7 @@
 }
 
 h2 a {
-    font-size: 40px;
+    font-size: 3.5vw;
     color: #D81E7E;
     text-decoration: none;
     text-transform: uppercase;
@@ -105,7 +104,7 @@ h2 a {
 
 .menu_list li {
     padding: 15px 0;
-    text-transform: uppercase; /* sprawdzic czy bedzie estetycznie */
+    text-transform: uppercase; 
     transform: translateY(200px);
     opacity: 0;
     animation: 2s slideUp ease forwards .5s;
@@ -113,7 +112,7 @@ h2 a {
 }
 
 .menu_list li::before {
-    content: ""; /*sprawdzic czy zwykly cudzyslow w html bedzie problemem */
+    content: ""; 
     position: absolute;
     height: 2px;
     width: 0px;
@@ -141,7 +140,7 @@ h2 a {
     position: absolute;
     display: flex;
     z-index: 1;
-    font-size: 30px;
+    font-size: 2.5vw;
     align-items: center;
     justify-content: center;
     background-color: #D81E7E;
@@ -282,8 +281,8 @@ h2 a {
 .map iframe {
     width: 20vw;
     height: 20vw;
-    min-width: 250px;
-    min-height: 250px;
+    min-width: 130px;
+    min-height: 200px;
 }
 
 img {
