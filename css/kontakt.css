@@ -11,7 +11,7 @@
 }
 
 .header {
-    font-size: 3vw;
+    font-size: 4vw;
     color: #D81E7E;
     margin-left: 4px;
     text-align: center;
@@ -46,7 +46,7 @@
 }
 
 h2 a {
-    font-size: 40px;
+    font-size: 4vw;
     color: #D81E7E;
     text-decoration: none;
     text-transform: uppercase;
@@ -94,7 +94,7 @@ h2 a {
 
 .menu_item a {
     text-decoration: none;
-    font-size: 50px;
+    font-size: 3vw;
     color: #15aed0;
 }
 
@@ -105,7 +105,7 @@ h2 a {
 
 .menu_list li {
     padding: 15px 0;
-    text-transform: uppercase; /* sprawdzic czy bedzie estetycznie */
+    text-transform: uppercase; 
     transform: translateY(200px);
     opacity: 0;
     animation: 2s slideUp ease forwards .5s;
@@ -113,7 +113,7 @@ h2 a {
 }
 
 .menu_list li::before {
-    content: ""; /*sprawdzic czy zwykly cudzyslow w html bedzie problemem */
+    content: ""; 
     position: absolute;
     height: 2px;
     width: 0px;
@@ -141,7 +141,7 @@ h2 a {
     position: absolute;
     display: flex;
     z-index: 1;
-    font-size: 30px;
+    font-size: 4vw;
     align-items: center;
     justify-content: center;
     background-color: #D81E7E;
