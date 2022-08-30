@@ -20,6 +20,7 @@
 
 .location-text {
     font-size: 3.5vw;
+    min-width: 15px;
     font-weight: 800;
     color: #D81E7E;
     text-transform: uppercase;
@@ -272,9 +273,7 @@ h2 a {
     position: relative;
     overflow: hidden;
     display: flex;
-    
     padding: 10px;
-    
     border: 0.5vw;
     border: #15aed0;
     border-style: solid;
