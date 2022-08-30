@@ -159,7 +159,7 @@ h2 a {
 h3 {
   color: #15aed0;
   text-transform: uppercase;
-  font-size: 1.75vw;
+  font-size: 2vw;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -180,7 +180,7 @@ h3 {
 
 .sub-text {
   color: #d81e7e;
-  font-size: 20px;
+  font-size: 2.75vw;
   text-indent: 2.5vw;
   font-weight: 600;
 }
