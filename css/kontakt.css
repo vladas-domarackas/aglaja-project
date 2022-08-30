@@ -45,67 +45,10 @@
 }
 
 h2 a {
-    font-size: 40px;
+    font-size: 3.5vw;
     color: #D81E7E;
     text-decoration: none;
     text-transform: uppercase;
-}
-
-@media (max-width: 480px) {
-    h2 a {
-    font-size: 15px;
-    color: #D81E7E;
-    text-decoration: none;
-    text-transform: uppercase;
-    }
-    .menu_item a {
-        text-decoration: none;
-        font-size: 15px;
-        color: #15aed0;
-    }
-    .popover .close::after {
-        right: 0;
-        top: 0;
-        width: 50px;
-        height: 50px;
-        position: absolute;
-        display: flex;
-        z-index: 1;
-        font-size: 15px;
-        align-items: center;
-        justify-content: center;
-        background-color: #D81E7E;
-        color: #fff;
-        content: "x";
-        cursor: pointer;
-        animation: 1s fadeIn ease forwards .5s;
-    }
-    .location-text {
-        font-size: 3vw;
-        font-weight: 800;
-        color: #D81E7E;
-        text-transform: uppercase;
-        display: flex;
-        flex-shrink: 1;
-    }
-    .map iframe {
-        width: 20vw;
-        height: 20vw;
-        min-width: 130x;
-        min-height: 200px;
-    }
-    .link-list .links .contact_item i {
-        margin-left: 10px;
-        color: #000;
-        background: #fff;
-        padding: 10px;
-        border-radius: 50%;
-        width: 20px;
-        height: 20px;
-        font-size: 20px;
-        background: #ffffff;
-        transform: rotate(0deg);
-    }
 }
 
 .popover {
@@ -150,7 +93,7 @@ h2 a {
 
 .menu_item a {
     text-decoration: none;
-    font-size: 50px;
+    font-size: 3vw;
     color: #15aed0;
 }
 
@@ -161,7 +104,7 @@ h2 a {
 
 .menu_list li {
     padding: 15px 0;
-    text-transform: uppercase; /* sprawdzic czy bedzie estetycznie */
+    text-transform: uppercase; 
     transform: translateY(200px);
     opacity: 0;
     animation: 2s slideUp ease forwards .5s;
@@ -169,7 +112,7 @@ h2 a {
 }
 
 .menu_list li::before {
-    content: ""; /*sprawdzic czy zwykly cudzyslow w html bedzie problemem */
+    content: ""; 
     position: absolute;
     height: 2px;
     width: 0px;
@@ -197,7 +140,7 @@ h2 a {
     position: absolute;
     display: flex;
     z-index: 1;
-    font-size: 30px;
+    font-size: 2.5vw;
     align-items: center;
     justify-content: center;
     background-color: #D81E7E;
@@ -300,7 +243,7 @@ h2 a {
     border-radius: 50%;
     width: 20px;
     height: 20px;
-    font-size: 20px;
+    font-size: 1.5vw;
     background: #ffffff;
     transform: rotate(0deg);
 }
@@ -320,7 +263,7 @@ h2 a {
     border-radius: 50%;
     width: 20px;
     height: 20px;
-    font-size: 20px;
+    font-size: 1.5vw;
     background: #ffffff;
     transform: rotate(0deg);
 }
