@@ -180,7 +180,7 @@ h3 {
 
 .sub-text {
   color: #d81e7e;
-  font-size: 2.75vw;
+  font-size: 2.5vw;
   text-indent: 2.5vw;
   font-weight: 600;
 }
@@ -228,7 +228,7 @@ li:before {
 }
 
 .sidebartwo {
-  border-left: 20px;
+  border-left: 0.6vw;
   border-left-style: dotted;
   border-left-color: #D81E7E;
   width: 300px;
