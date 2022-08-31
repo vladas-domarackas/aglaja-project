@@ -183,13 +183,13 @@ h3 {
     width: 300px;
     padding: 10px;
     flex-shrink: 1;
-    border-right: 0.6vw;
+    border-right: 0.3vw;
     border-right-style: dotted;
     border-right-color: #D81E7E;
 }
 
 .sidebartwo {
-    border-left: 0.6vw;
+    border-left: 0.3vw;
     border-left-style: dotted;
     border-left-color: #D81E7E;
     width: 300px;
