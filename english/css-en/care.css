@@ -11,7 +11,7 @@
 }
 
 .header {
-    font-size: 4vw;
+    font-size: 2.5em;
     color: #D81E7E;
     margin-left: 4px;
     text-align: center;
@@ -31,7 +31,7 @@
 }
 
 h2 a {
-    font-size: 3.5vw;
+    font-size: 2em;
     color: #D81E7E;
     text-decoration: none;
     text-transform: uppercase;
@@ -79,7 +79,7 @@ h2 a {
 
 .menu_item a {
     text-decoration: none;
-    font-size: 3vw;
+    font-size: 1.75em;
     color: #15aed0;
 }
 
@@ -126,7 +126,7 @@ h2 a {
     position: absolute;
     display: flex;
     z-index: 1;
-    font-size: 2.5vw;
+    font-size: 2.5em;
     align-items: center;
     justify-content: center;
     background-color: #D81E7E;
@@ -159,14 +159,14 @@ h2 a {
 h3 {
     color: #15aed0;
     text-transform: uppercase;
-    font-size: 2.5vw;
+    font-size: 1em;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .care-title {
     color: #15aed0;
-    font-size: 3vw;
+    font-size: 1.5em;
     text-transform: uppercase;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -183,13 +183,13 @@ h3 {
     width: 300px;
     padding: 10px;
     flex-shrink: 1;
-    border-right: 0.4vw;
+    border-right: 0.4em;
     border-right-style: dotted;
     border-right-color: #D81E7E;
 }
 
 .sidebartwo {
-    border-left: 0.4vw;
+    border-left: 0.4em;
     border-left-style: dotted;
     border-left-color: #D81E7E;
     width: 300px;
@@ -217,7 +217,7 @@ ol {
 }
 
 li, .text-header {
-	font-size: 2vw;
+	font-size: 1.2em;
     color: #fff;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -233,7 +233,7 @@ li:before {
 li a {
     text-decoration: none;
     color: #15aed0;
-    font-size: 1.5vw;
+    font-size: 1.5em;
 }
 
 strong {
@@ -246,7 +246,7 @@ strong {
 
 h4, .ending {
     color: #D81E7E;
-    font-size: 1.5vw;
+    font-size: 1.5em;
     text-transform: uppercase;
 }
 
