@@ -11,7 +11,7 @@
 }
 
 .header {
-    font-size: 4vw;
+    font-size: 2.5em;
     color: #D81E7E;
     margin-left: 4px;
     text-align: center;
@@ -31,7 +31,7 @@
 }
 
 h2 a {
-    font-size: 3.5vw;
+    font-size: 2em;
     color: #D81E7E;
     text-decoration: none;
     text-transform: uppercase;
@@ -79,7 +79,7 @@ h2 a {
 
 .menu_item a {
     text-decoration: none;
-    font-size: 3vw;
+    font-size: 1.75em;
     color: #15aed0;
 }
 
@@ -126,7 +126,7 @@ h2 a {
     position: absolute;
     display: flex;
     z-index: 1;
-    font-size: 2.5vw;
+    font-size: 2.5em;
     align-items: center;
     justify-content: center;
     background-color: #D81E7E;
@@ -177,7 +177,7 @@ h2 a {
 
 h3 {
     color: #15aed0;
-    font-size: 2.5vw;
+    font-size: 1.5em;
 }
 
 .text {
@@ -187,7 +187,7 @@ h3 {
     border-top: none;
     border-bottom: none;
     color: #fff;
-    font-size: 1.5vw;
+    font-size: 1.25em;
     text-indent: 1rem;
     max-width: 50%;
 }
@@ -209,4 +209,72 @@ h3 {
 
 .me {
     padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 550px) {
+    .popover .close::after {
+        right: 0;
+        top: 0;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        display: flex;
+        z-index: 1;
+        font-size: 2.5vw;
+        align-items: center;
+        justify-content: center;
+        background-color: #D81E7E;
+        color: #fff;
+        content: "x";
+        cursor: pointer;
+        animation: 1s fadeIn ease forwards .5s;
+    }
+    .menu_item a {
+        text-decoration: none;
+        font-size: 3vw;
+        color: #15aed0;
+    }
+    .popover .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 0;
+        height: 0;
+        color: #fff;
+        background-color: #181818;
+        animation: 1s grow ease forwards;
+        text-align: center;
+        border: 4px solid #D81E7E;
+        z-index: 1;
+    }
+    h2 a {
+        font-size: 3.5vw;
+        color: #D81E7E;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    .header {
+        font-size: 4vw;
+        color: #D81E7E;
+        margin-left: 4px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    h3 {
+        color: #15aed0;
+        font-size: 3.5vw;
+    }
+    
+    .text {
+        border-right: #15aed0;
+        border-style: dotted;
+        border-left: none;
+        border-top: none;
+        border-bottom: none;
+        color: #fff;
+        font-size: 2vw;
+        text-indent: 1rem;
+        max-width: 50%;
+    }
 }
