@@ -218,7 +218,6 @@ ol {
 
 .pic-n-txt {
     background-color: #131313;
-    width: 70vh;
     display: flex;
 }
 
@@ -229,21 +228,20 @@ ol {
     border-color: #D81E7E;
     border-left-style: dotted;
     border-right-style: dotted;
-    width: 70vh;
 }
 
 .sidebarone {
     padding-left: 0.5vw;
     padding-top: 0.5vw;
     padding-right: 1vw;
-    width: 30vw;
+    width: 40vw;
 }
 
 .sidebartwo {
     padding-left: 1vw;
     padding-top: 0.5vw;
     padding-right: 0.5vw;
-    width: 30vw;
+    width: 40vw;
 }
 
 ol li {
