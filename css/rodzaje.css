@@ -252,7 +252,7 @@ ol li {
     max-height: 10vh;
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 700px) {
     h4, .ending {
         color: #D81E7E;
         font-size: 1.5vw;
