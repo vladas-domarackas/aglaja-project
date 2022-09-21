@@ -1,2 +1,2 @@
 # aglaja-project
-Projekt strony reklamujacej
+Projekt strony reklamujacej/FINISHED
