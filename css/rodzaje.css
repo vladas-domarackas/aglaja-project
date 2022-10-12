@@ -233,7 +233,7 @@ ol {
 .sidebarone {
     padding-left: 0.5vw;
     padding-top: 0.5vw;
-    padding-right: 1vw;
+    padding-right: 0.5vw;
     width: 300px;
 }
 
@@ -250,6 +250,10 @@ ol li {
 
 .pic-txt {
     max-height: 10vh;
+}
+
+.neededind, .needind {
+    text-indent: 1vw;
 }
 
 @media only screen and (max-width: 700px) {
