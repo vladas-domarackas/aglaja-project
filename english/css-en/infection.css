@@ -316,4 +316,12 @@ li:before {
       text-align: center;
       text-transform: uppercase;
   }
+
+  .sub-text {
+    font-size: 3vw;
+  }
+
+  .list-title {
+    font-size: 3.5vw;
+  }
 }

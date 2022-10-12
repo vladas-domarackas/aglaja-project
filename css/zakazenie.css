@@ -248,7 +248,7 @@ li:before {
       font-size: 1.5vw;
   }
   li, .text-header {
-      font-size: 2vw;
+      font-size: 2.5vw;
       color: #fff;
       padding-top: 8px;
       padding-bottom: 8px;
@@ -315,5 +315,13 @@ li:before {
       margin-left: 4px;
       text-align: center;
       text-transform: uppercase;
+  }
+
+  .sub-text {
+    font-size: 3vw;
+  }
+
+  .list-title {
+    font-size: 3.5vw;
   }
 }
